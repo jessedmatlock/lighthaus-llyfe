@@ -1,5 +1,63 @@
 /* @override 
-	http://liquid.com/css/foundation.css */
+	http://liquid.com/css/foundation.css
+	http://ll.com/css/foundation.css */
+
+/*
+FONTS
+
+font-family:'Avenir W01'; font-weight:300; font-style:normal;
+font-family:'Avenir W01'; font-weight:400; font-style:normal;
+font-family:'DIN 1451 W01'; font-weight:400; font-style:normal;
+font-family: 'Lobster', cursive; font-weight: normal; font-style:normal;d
+
+*/
+
+@font-face{
+font-family:"Avenir W01_n3";
+src:url("fonts/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"Avenir W01";
+src:url("fonts/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#iefix");
+src:url("fonts/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#iefix") format("eot"),url("fonts/9bcb625d-81de-48c2-ba0c-664558d197e3.woff2") format("woff2"),url("fonts/939cba03-5b40-4d01-9bc5-7589eca863db.woff") format("woff"),url("fonts/849bc5b9-a2ff-4343-977b-26ba8bd24a60.ttf") format("truetype"),url("fonts/f67fa3b5-c1d1-488f-8e60-a828b9ad56a4.svg#f67fa3b5-c1d1-488f-8e60-a828b9ad56a4") format("svg");
+font-weight: 300;
+font-style: normal;
+}
+@font-face{
+font-family:"Avenir W01_n4";
+src:url("fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"Avenir W01";
+src:url("fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix");
+src:url("fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot"),url("fonts/75c84254-5125-412c-bc24-56769ae3b627.woff2") format("woff2"),url("fonts/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("fonts/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("fonts/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
+font-weight: 400;
+font-style: normal;
+}
+@font-face{
+font-family:"DIN 1451 W01_n4";
+src:url("fonts/1fb56332-d14b-4f1e-bb8c-4b53b273e228.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"DIN 1451 W01";
+src:url("fonts/1fb56332-d14b-4f1e-bb8c-4b53b273e228.eot?#iefix");
+src:url("fonts/1fb56332-d14b-4f1e-bb8c-4b53b273e228.eot?#iefix") format("eot"),url("fonts/23c5f03e-ca86-4c09-b5ce-e7e5cc6ab1d5.woff2") format("woff2"),url("fonts/f5e7241f-0645-4a94-bdd1-7f4a6b06b9a3.woff") format("woff"),url("fonts/e1ec7e03-8869-492b-8c2b-31b484882fca.ttf") format("truetype"),url("fonts/2ce68cf6-afa6-4c77-916e-db420f164369.svg#2ce68cf6-afa6-4c77-916e-db420f164369") format("svg");
+font-weight: 400;
+font-style: normal;
+}
+
+.font-light {
+	font-family:'Avenir W01'; font-weight:300; font-style:normal;	
+}
+.font-std {
+	font-family:'Avenir W01'; font-weight:400; font-style:normal;
+}
+.font-heading {
+	font-family:'DIN 1451 W01'; font-weight:400; font-style:normal;	
+}
+.cursive {
+	font-family: 'Lobster', cursive; font-weight: normal; font-style:normal;d	
+}
 
 meta.foundation-version {
   font-family: "/5.5.2/"; }
@@ -3437,26 +3495,28 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: normal;
+  font-family: "Avenir W01", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
     font-size: 1.21875rem;
+    font-weight: 400;
     line-height: 1.6; }
   p aside {
     font-size: 0.875rem;
     font-style: italic;
     line-height: 1.35; }
 
+
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "DIN 1451 W01", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -3637,13 +3697,13 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 4.5rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 3rem; }
 
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 2.5rem; }
 
   h4 {
     font-size: 1.4375rem; }
@@ -6069,7 +6129,30 @@ section#header {
     width: 100%;
     height: auto;
 }
+#slider .item {
 
+}
+#slider .item .caption {
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 10;
+	text-align: center;
+	color: #fff;
+}
+#slider .item .caption h1 {
+	line-height: 1;
+	margin-bottom: 0;
+}
+#slider .item .caption h1,
+#slider .item .caption h2,
+#slider .item .caption h3,
+#slider .item .caption h4, 
+#slider .item .caption p {
+	color: #fff;
+	text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
 #logo {
 	width: 302px;
 	height: 220px;
@@ -6096,6 +6179,16 @@ section#header {
 	#logo img {
 	margin: 0 auto;
 	}
+	#slider .item .caption {
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		margin: 0 auto;
+		z-index: 10;
+		text-align: center;
+		color: #fff;
+	}
+	
 }
 
 section.red-section {
@@ -6132,6 +6225,7 @@ footer#footer a:hover {
 	text-align: center;
 	padding: 0;
 	margin: 40px 0 40px;
+	height: 48px;
 }
 .social-links li {
 	display: inline-block;

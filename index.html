@@ -5,23 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Liquid Lyfe</title>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>	
 		<link rel="stylesheet" href="css/foundation.css" />
 		<!-- Owl Carousel Assets -->
 	    <link href="css/owl.carousel.css" rel="stylesheet">
 	    <link href="css/owl.theme.css" rel="stylesheet">
 
 		<script src="js/vendor/modernizr.js"></script>
+		
 	</head>
 	<body>
 		
 	<section id="header" class="">
         <a href="javascript:void(0);" id="logo"><img src="img/logo.jpg" alt="" /></a>
 		
-	    <div id="slider" class="owl-carousel owl-theme">
-	      <div class="item"><img src="img/slide-1.jpg" alt=""></div>
-	      <div class="item"><img src="img/slide-1.jpg" alt=""></div>
-	      <div class="item"><img src="img/slide-1.jpg" alt=""></div>
-	    </div>
+		<div id="slider" class="owl-carousel owl-theme">
+			<div class="item">
+				<img src="img/slide-1.jpg" alt="">
+				<div class="caption">
+					<h1 class="">PREMIUM VAPOR LOUNGE</h1>
+					<h3><i class="fa fa-star"></i> <span class="cursive">in commack, ny</span> <i class="fa fa-star"></i></h3>
+				</div><!-- end div.caption -->
+			</div>
+			<div class="item">
+				<img src="img/slide-1.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/slide-1.jpg" alt="">
+			</div>
+		</div>
 
 	</section><!-- end section #header. -->
     <section id="" class="red-section">
@@ -98,13 +110,19 @@
 			  pagination: false,
 		      slideSpeed : 300,
 		      paginationSpeed : 400,
-		      singleItem: true
+		      singleItem: true,
 	      // "singleItem:true" is a shortcut for:
 		      // items : 1, 
 		      // itemsDesktop : false,
 		      // itemsDesktopSmall : false,
 		      // itemsTablet: false,
 		      // itemsMobile : false
+		    beforeMove: function(){
+
+		    }, 
+		    afterMove: function(){
+
+		    }
 		  });
 		});  // end docready
 
@@ -117,7 +135,7 @@
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 15,
-
+					scrollwheel: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.8420546, -73.3021106), // New York
 
@@ -157,5 +175,14 @@
 			  });
 			  
             }
-        </script>  </body>
+			var MTIProjectId='83cb1a09-9102-4b91-b0d5-0210ef09a66c';
+			 (function() {
+			        var mtiTracking = document.createElement('script');
+			        mtiTracking.type='text/javascript';
+			        mtiTracking.async='true';
+			        mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
+			        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+			   })();
+			</script>
+</body>
 </html>
