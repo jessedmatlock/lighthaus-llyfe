@@ -18,22 +18,27 @@
 		
 	<section id="header" class="">
         <a href="javascript:void(0);" id="logo"><img src="img/logo.jpg" alt="" /></a>
-		
-		<div id="slider" class="owl-carousel owl-theme">
-			<div class="item">
-				<img src="img/slide-1.jpg" alt="">
-				<div class="caption">
-					<h1 class="">PREMIUM VAPOR LOUNGE</h1>
-					<h3><i class="fa fa-star"></i> <span class="cursive">in commack, ny</span> <i class="fa fa-star"></i></h3>
-				</div><!-- end div.caption -->
+		<div id="slider-wrapper">
+			<a href="javascript:void(0);" id="" class="prev"><i class="fa fa-angle-left"></i></a>
+			<a href="javascript:void(0);" id="" class="next"><i class="fa fa-angle-right"></i></a>
+			<div id="slider" class="owl-carousel owl-theme">
+
+				<div class="item">
+					<img src="img/slide-1.jpg" alt="">
+					<div class="caption">
+						<h1 class="">PREMIUM VAPOR LOUNGE</h1>
+						<h3><i class="fa fa-star"></i> <span class="cursive">in commack, ny</span> <i class="fa fa-star"></i></h3>
+					</div><!-- end div.caption -->
+				</div>
+				<div class="item">
+					<img src="img/slide-1.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/slide-1.jpg" alt="">
+				</div>
 			</div>
-			<div class="item">
-				<img src="img/slide-1.jpg" alt="">
-			</div>
-			<div class="item">
-				<img src="img/slide-1.jpg" alt="">
-			</div>
-		</div>
+			
+		</div><!-- end div#slider-wrapper -->
 
 	</section><!-- end section #header. -->
     <section id="" class="red-section">
@@ -124,6 +129,14 @@
 
 		    }
 		  });
+		
+		  // Custom Navigation Events
+		  $(".next").click(function(){
+		    $("#slider").trigger('owl.next');
+		  })
+		  $(".prev").click(function(){
+		    $("#slider").trigger('owl.prev');
+		  })
 		});  // end docready
 
             // When the window has finished loading create our google map below

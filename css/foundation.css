@@ -6125,17 +6125,37 @@ th.hide-for-touch {
 section {
 	position: relative;
 }
-section#header {
-	
+#slider-wrapper {
+	position: relative;
+}
+a.next,
+a.prev {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	height: 100px;
+	width: 24px;
+	padding: 0;
+	color: rgba(255, 255, 255, 0.25);
+	z-index: 1;
+	font-size: 80px;
+}
+a.next {
+	right: 5px;
+}
+a.prev {
+	left: 5px;
+}
+a.next:hover,
+a.prev:hover {
+	color: #fff;
 }
 
 #slider .item img {
     display: block;
     width: 100%;
     height: auto;
-}
-#slider .item {
-
 }
 #slider .item .caption {
 	position: absolute;
