@@ -31,17 +31,17 @@
 	</head>
 	<body>
 		
-	<section id="header" class="">
+	<section id="header">
         <a href="javascript:void(0);" id="logo"><img src="img/logo.jpg" alt="" /></a>
 		<div id="slider-wrapper">
-			<a href="javascript:void(0);" id="" class="prev"><i class="fa fa-angle-left"></i></a>
-			<a href="javascript:void(0);" id="" class="next"><i class="fa fa-angle-right"></i></a>
+			<a href="javascript:void(0);" class="prev"><i class="fa fa-angle-left"></i></a>
+			<a href="javascript:void(0);" class="next"><i class="fa fa-angle-right"></i></a>
 			<div id="slider" class="owl-carousel owl-theme">
 
 				<div class="item">
 					<img src="img/slide-1.jpg" alt="">
 					<div class="caption">
-						<h1 class="">PREMIUM VAPOR LOUNGE</h1>
+						<h1>PREMIUM VAPOR LOUNGE</h1>
 						<h3><i class="fa fa-star"></i> <span class="cursive">in commack, ny</span> <i class="fa fa-star"></i></h3>
 					</div><!-- end div.caption -->
 				</div>
@@ -50,63 +50,91 @@
 		</div><!-- end div#slider-wrapper -->
 
 	</section><!-- end section #header. -->
-    <section id="" class="red-section">
+    <section class="red-section">
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
 		    	<div class="row text-center">
 		    	    <div class="small-12 medium-12 large-12 columns">
-		    	        <h1 class="">WHAT IS LIQUID LYFE?</h1>
+		    	        <h1>WHAT IS LIQUID LYFE?</h1>
 						<p class="bordered">LIQUID LYFE IS BILLY & ERIC — TWO DEDICATED LONG ISLAND VAPOR ENTHUSIASTS WHO ARE TAKING THEIR PASSION TO THE PEOPLE AT THEIR E-LIQUID SHOP AND LOUNGE IN COMMACK, NEW YORK. THEY BOTH BELIEVE IN THE BEST LIQUIDS AND A SUPERIOR VAPING LOUNGE EXPERIENCE. COME IN AND START YOUR LIQUID LYFE.</p>
 		    	    </div><!-- end columns -->
 		    	</div><!-- end row -->
 
 				<div class="row text-center">
-				    <div class="small-12 medium-12 large-6 columns right-border">
-				        <h2 class="">ADDRESS</h2>
+				    <div class="small-12 medium-12 large-4 columns right-border">
+				        <h2>ADDRESS</h2>
 						<p>6160 JERICHO TURNPIKE<br/>
 						COMMACK, NEW YORK<br/>
 						631-555-5555</p>
 				    </div><!-- end columns -->
-				    <div class="small-12 medium-12 large-6 columns">
-				        <h2 class="">HOURS</h2>
+				    <div class="small-12 medium-12 large-4 columns right-border">
+				        <h2>HOURS</h2>
 						<p>MON-THURS: 10AM  to 9PM<br/>
 						FRI & SAT: 10AM to 12PM<br/>
 						SUN: 12PM to 9PM</p>
+				    </div><!-- end columns -->
+				    <div class="small-12 medium-12 large-4 columns">
+				        <h2>BE SOCIAL</h2>
+						<ul class="social-icons">
+							<li>							
+								<a href="https://instagram.com/liquid_lyfe">	
+									<i class="fa fa-instagram"></i>					
+								</a>
+							</li>
+								
+							<!--	
+							<li>
+								<a href="javascript:void(0);">	
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">	
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">	
+									<i class="fa fa-vine"></i>
+								</a>
+							</li>
+							 -->
+						</ul>				
 				    </div><!-- end columns -->
 				</div><!-- end row -->
 		    </div><!-- end columns -->
 		</div><!-- end row -->
 	
     </section><!-- end section #.red-section -->
-    <section id="map-wrapper" class="">
+    <section id="map-wrapper">
 		<div id="map"></div>
     </section><!-- end section #map-wrapper. -->
 	<footer id="footer" class="text-center">
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
-		        <img src="img/footer-logo.png"  class="" id="footer-logo"  alt="" />
-				<p>6160 JERICHO TURNPIKE | COMMACK, NEW YORK | 631-555-5555 | <a href="mailto:sayhi@liquiidlyfevapor.com" id="" class="">SAYHI@LIQUIIDLYFEVAPOR.COM</a></p>
-				<ul class="social-links">
+		        <img src="img/footer-logo.png"  id="footer-logo"  alt="" />
+				<p>6160 JERICHO TURNPIKE | COMMACK, NEW YORK | 631-555-5555 | <a href="mailto:sayhi@liquiidlyfevapor.com">SAYHI@LIQUIIDLYFEVAPOR.COM</a></p>
+				<ul class="social-icons">
 					<li>
-						<a href="javascript:void(0);" id="" class="">	
+						<a href="https://instagram.com/liquid_lyfe">	
 							<i class="fa fa-instagram"></i>					
 						</a>
 					</li>
-					<li>
-						<a href="javascript:void(0);" id="" class="">	
+					<!--li>
+						<a href="javascript:void(0);">	
 							<i class="fa fa-twitter"></i>
 						</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);" id="" class="">	
+						<a href="javascript:void(0);">	
 							<i class="fa fa-facebook"></i>
 						</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);" id="" class="">	
+						<a href="javascript:void(0);">	
 							<i class="fa fa-vine"></i>
 						</a>
-					</li>
+					</li-->
 				</ul>				
 		    </div><!-- end columns -->
 		</div><!-- end row -->		
@@ -160,7 +188,7 @@
 					scrollwheel: false,
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.8420546, -73.3021106), // New York
-
+					scrollwheel: false,
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
                     styles: [ { "stylers": [ { "saturation": -100 }, { "visibility": "simplified" } ] } ]
